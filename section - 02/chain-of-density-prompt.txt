@@ -1,0 +1,27 @@
+Article:
+
+### 
+<Article>
+###
+
+Summary:
+
+*** 
+<Summary>
+***
+
+Task:
+
+### 
+
+Identify the 2 informative entities from the article that are missing from this summary. An entity is defined as:
+
+Relevant : to the main story
+Specific : descriptive yet concise
+Novel : not present in the previous summary
+Faithful : present in the article
+Anywhere : located anywhere in the article
+
+Then write a new denser summary of identiacl length, which covers all entities and details from previous summary plus the missing entities.
+
+###
