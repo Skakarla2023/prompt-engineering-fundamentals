@@ -85,3 +85,24 @@ For difficult tasks:
 But for production systems, concise reasoning is often better:
 
 > Briefly justify each recommendation.
+
+
+
+
+## Prompting Templates
+
+- A good prompt is something which clearly tells the LLM what needs to be done.
+- It includes the objective, context and examples describing how we want our output to be.
+- Prompt templates are predefined, reusable structures for instructing AI models.
+
+
+<img width="995" height="414" alt="image" src="https://github.com/user-attachments/assets/30099b53-d868-4543-8081-48bf3702f82a" />
+
+
+<img width="977" height="398" alt="image" src="https://github.com/user-attachments/assets/d57a8895-40d6-4347-8076-82cbd0003b46" />
+
+
+<img width="992" height="388" alt="image" src="https://github.com/user-attachments/assets/8809c87a-42f5-4e74-a371-6a8d3ce3c1e6" />
+
+
+<img width="928" height="393" alt="image" src="https://github.com/user-attachments/assets/09473ec5-5c54-4049-ba75-6d1352f03ec3" />
