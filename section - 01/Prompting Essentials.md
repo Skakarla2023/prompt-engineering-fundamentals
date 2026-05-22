@@ -30,6 +30,6 @@
 <img width="968" height="436" alt="image" src="https://github.com/user-attachments/assets/6b45425d-1981-4583-bceb-2da3229be1c9" />
 
 
-### 5. Give examples - for shot prompting.
+### 5. Give examples - few shot prompting.
 
 <img width="1001" height="438" alt="image" src="https://github.com/user-attachments/assets/8dfaae71-5798-4004-888a-680ee403a331" />
