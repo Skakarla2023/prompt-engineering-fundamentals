@@ -1,25 +1,17 @@
 # Prompt Engineering — Fundamentals & Techniques
 
-Learning journal for the **Prompt Engineering** course on Udemy.  
-Focus: mastering the art of communicating with LLMs effectively to get precise, reliable, and high-quality outputs.
+Personal notes and experiments from the **Prompt Engineering** course on Udemy.  
+Built as a reference I'd actually go back to — not just a course archive.
 
----
-
-## About This Repo
-
-Prompt engineering is the foundation of everything in AI development.  
-Before touching APIs or building agents, you need to deeply understand how to *talk* to an LLM.  
-This repo captures my notes, experiments, and reusable prompt templates as I go through the course.
-
-**Course:** Prompt Engineering — Udemy  
-**Started:** <!22-05-2026>  
-**Status:** 🟡 In Progress
+**Course:** Prompt Engineering — Udemy &nbsp;|&nbsp; **Completed:** May 2026 &nbsp;|&nbsp; **Status:** ✅ Done
 
 ---
 
 ## Why This Matters for a Backend Engineer
 
-As an AI Backend Engineer, you won't just call APIs — you'll write system prompts, design prompt pipelines, and debug when LLM output breaks your application logic. Strong prompt engineering = fewer bugs, better outputs, lower token costs.
+As an AI Backend Engineer, you won't just call APIs — you'll write system prompts, design prompt pipelines, and debug when LLM output breaks your application logic.
+
+Strong prompt engineering = fewer bugs, better outputs, lower token costs.
 
 ---
 
@@ -27,103 +19,58 @@ As an AI Backend Engineer, you won't just call APIs — you'll write system prom
 
 ```
 prompt-engineering-fundamentals/
-├── notes/
-│   ├── 01-how-llms-work.md           # Tokens, context windows, temperature
-│   ├── 02-basic-prompting.md         # Zero-shot, few-shot prompting
-│   ├── 03-roles-and-personas.md      # System prompts, role assignment
-│   ├── 04-chain-of-thought.md        # CoT, step-by-step reasoning
-│   ├── 05-output-formatting.md       # JSON output, structured responses
-│   ├── 06-prompt-chaining.md         # Multi-step prompt pipelines
-│   ├── 07-common-mistakes.md         # What NOT to do + fixes
-│   └── 08-advanced-techniques.md     # ReAct, self-consistency, etc.
-├── templates/
-│   ├── system-prompt-template.md     # Reusable system prompt structure
-│   ├── json-output-prompt.md         # Prompts that return clean JSON
-│   ├── summarization-prompt.md       # For summarizing documents/text
-│   └── classification-prompt.md      # For categorizing inputs
-├── experiments/
-│   ├── temperature-tests.md          # What changes at 0 vs 0.5 vs 1.0
-│   ├── few-shot-examples.md          # Side-by-side few-shot comparisons
-│   └── bad-vs-good-prompts.md        # Before/after prompt improvements
-└── interview-prep/
-    └── prompt-engineering-qa.md      # Interview Q&A on prompt engineering
+├── 01-foundations/
+│   ├── Prompting Essentials.md          # Core concepts every prompt engineer needs
+│   └── Best Practices and Templates.md  # Reusable patterns for real-world use
+│
+├── 02-prompting-techniques/
+│   ├── Chain-of-thought Prompting.md    # Step-by-step reasoning prompts
+│   ├── Role Prompting.md                # Personas, system roles, behaviour shaping
+│   ├── Step-back Prompting.md           # Abstract reasoning before answering
+│   └── chain-of-density-prompt.txt      # Iterative summarization technique
+│
+├── 03-reasoning-frameworks/
+│   ├── Program-of-thought.md            # Code-assisted reasoning
+│   ├── Skeleton-of-thought.md           # Parallel decoding for faster responses
+│   └── Tree-of-Thought.md               # Branching reasoning paths
+│
+├── 04-hyperparameters/
+│   ├── Prompt Hyperparameters.md        # Temperature, top-p, max tokens explained
+│   └── Hyperparameter Tuning.md         # When and how to tune each parameter
+│
+├── 05-prompt-tuning/
+│   └── Prompt Tuning.md                 # Soft prompting vs. few-shot vs. fine-tuning
+│
+└── 06-evaluation-and-testing/
+    ├── Prompt AB Testing.md             # How to compare and iterate on prompts
+    └── Prompt Evaluation.md             # Metrics and frameworks for scoring output
 ```
 
 ---
 
-## Progress Tracker
-
-| Module | Topic | Status |
-|--------|-------|--------|
-| 01 | How LLMs work (tokens, context, temperature) | ⬜ Not started |
-| 02 | Basic prompting — zero-shot & few-shot | ⬜ Not started |
-| 03 | Roles, personas & system prompts | ⬜ Not started |
-| 04 | Chain-of-thought reasoning | ⬜ Not started |
-| 05 | Structured & JSON output formatting | ⬜ Not started |
-| 06 | Prompt chaining & pipelines | ⬜ Not started |
-| 07 | Common mistakes & how to fix them | ⬜ Not started |
-| 08 | Advanced techniques | ⬜ Not started |
-
-> Update status: ⬜ Not started → 🟡 In progress → ✅ Done
-
----
-
-## Key Techniques Learned
-
-> I'll update this as I go through the course.
+## Key Techniques at a Glance
 
 | Technique | What it does | When to use |
 |-----------|-------------|-------------|
-| Zero-shot | Ask directly, no examples | Simple tasks |
-| Few-shot | Provide examples in prompt | Complex or specific formats |
+| Zero-shot | Ask directly, no examples | Simple or general tasks |
+| Few-shot | Provide examples in the prompt | Complex or format-specific outputs |
 | Chain-of-thought | Ask model to reason step-by-step | Math, logic, multi-step problems |
-| System prompt | Set role and behaviour upfront | All production use cases |
-| JSON mode | Force structured output | Backend API integrations |
-
----
-
-## Prompt Templates
-
-Reusable templates I've built and tested — stored in `/templates`.
-
-- `system-prompt-template.md` — base structure for any system prompt
-- `json-output-prompt.md` — reliably returns structured JSON
-- `summarization-prompt.md` — clean document summarizer
-- `classification-prompt.md` — categorize any input
-
----
-
-## Interview Prep
-
-Questions I can answer confidently after this course:
-
-- [ ] What is prompt engineering and why does it matter?
-- [ ] What's the difference between zero-shot and few-shot prompting?
-- [ ] How does temperature affect LLM output?
-- [ ] What is chain-of-thought prompting?
-- [ ] How do you get an LLM to reliably return JSON?
-- [ ] What are common prompt injection risks in a backend system?
-- [ ] How do you reduce hallucinations through prompting?
-
----
-
-## Key Learnings
-
-> I'll update this section with my biggest takeaways.
-
--
+| Role prompting | Assign a persona or system role | Production system prompts |
+| Step-back prompting | Derive principles before answering | Abstract or domain-heavy questions |
+| Tree-of-thought | Explore branching reasoning paths | Decision-making, planning |
+| Program-of-thought | Use code as an intermediate reasoning step | Numerical reasoning, structured logic |
 
 ---
 
 ## Connection to Other Repos
 
-This repo feeds directly into my other learning repos:
+This repo feeds directly into my ongoing AI Backend Engineer learning path:
 
 | Repo | How prompt engineering applies |
 |------|-------------------------------|
-| [claude-api-java-backend](https://github.com/Skakarla2023/claude-api-java-backend) | System prompts + output formatting in API calls |
-| [model-context-protocol-experiments](https://github.com/Skakarla2023/model-context-protocol-experiments) | Prompt design for MCP tool descriptions |
-| [ai-fluency-foundations](https://github.com/Skakarla2023/ai-fluency-foundations) | Understanding effective AI collaboration |
+| [claude-api-java-backend](https://github.com/Skakarla2023/claude-api-java-backend) | System prompts + structured output in live API calls |
+| [model-context-protocol-experiments](https://github.com/Skakarla2023/model-context-protocol-experiments) | Prompt design for MCP tool descriptions and agent flows |
+| [ai-fluency-foundations](https://github.com/Skakarla2023/ai-fluency-foundations) | Understanding effective human-AI collaboration |
 
 ---
 
