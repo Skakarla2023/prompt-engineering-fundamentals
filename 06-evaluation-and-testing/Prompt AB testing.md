@@ -14,4 +14,10 @@
 
 **Prompt B**: “Explain photosynthesis in simple words for a 12-year-old.”
 
-In A/B testing, two different prompts are divided between two equal groups of users and tested under the same conditions. The responses, performance, and user interactions for each prompt are then compared to identify which prompt gives better results, such as clearer answers, higher accuracy, or better user engagement.
+In A/B testing, two different prompts are divided between two equal groups of users and tested under the same conditions. The responses, performance, and user interactions for each prompt are then compared based on some metrics to identify which prompt gives better results, such as clearer answers, higher accuracy, or better user engagement.
+
+
+- AB prompt testing answers which prompts lead to better real world outcomes.
+- This is done by trials in controlled statistically sound way.
+- Provides statistical evidence of which prompt is truly better for your application.
+- Uses some metrics to test which prompt closely serves the desired purpose.
